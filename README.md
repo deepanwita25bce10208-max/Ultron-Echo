@@ -102,15 +102,25 @@ These are not scripted lines. They are pulled from your PlayerProfile in real ti
 ultron_echo/
 
 ├── Assets/
+
 │   ├── Scripts/
+
 │   │   ├── PlayerProfile.cs      ← spike() + decay + knowledge%
+
 │   │   ├── DayManager.cs         ← sleep cycles, day transitions
+
 │   │   ├── AIStateManager.cs     ← neuromorphic state machine
+
 │   │   ├── AIEntity.cs           ← Ultron movement + behavior
+
 │   │   ├── HUDManager.cs         ← live updating diagnostic panel
+
 │   │   └── SimplePlayerMovement.cs
+
 │   ├── Scenes/
+
 │   └── Prefabs/
+
 └── README.md
 
 ---
