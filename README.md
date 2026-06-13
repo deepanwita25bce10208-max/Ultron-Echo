@@ -1,8 +1,9 @@
 # ULTRON: ECHO
 ### A Neuromorphic Horror Experience
 
-> "Day One, I knew nothing. 
-   Day Fifty, I know you better than SHIELD ever did."
+> "Day One, I knew nothing.
+> 
+>  Day Fifty, I know you better than SHIELD ever did."
 
 ---
 
@@ -71,3 +72,49 @@ This spike + decay pattern mirrors how biological neural networks reinforce repe
 ## The Climax
 
 At Day 50, Ultron reads your actual tracked data back to you:
+
+"You used the ventilation system 7 times."
+
+"You turned left 83% of the time under pressure."
+
+"You hid 12 times. I memorized every location."
+
+"Day One, I knew nothing."
+
+*"Day Fifty, I know you better than SHIELD ever did."*
+
+These are not scripted lines. They are pulled from your PlayerProfile in real time.
+
+---
+
+## Tech Stack
+
+- **Engine:** Unity
+- **Language:** C#
+- **AI:** Custom neuromorphic state machine
+- **Pathfinding:** Unity NavMesh
+- **UI:** Unity Canvas with monospaced SHIELD terminal aesthetic
+
+---
+
+## Project Structure
+
+ultron_echo/
+
+├── Assets/
+│   ├── Scripts/
+│   │   ├── PlayerProfile.cs      ← spike() + decay + knowledge%
+│   │   ├── DayManager.cs         ← sleep cycles, day transitions
+│   │   ├── AIStateManager.cs     ← neuromorphic state machine
+│   │   ├── AIEntity.cs           ← Ultron movement + behavior
+│   │   ├── HUDManager.cs         ← live updating diagnostic panel
+│   │   └── SimplePlayerMovement.cs
+│   ├── Scenes/
+│   └── Prefabs/
+└── README.md
+
+---
+
+## Hackathon
+
+Built for **NeuroNex`26**.
